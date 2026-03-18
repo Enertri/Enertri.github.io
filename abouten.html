@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Enertri</title>
 </head>
 <body>
     <div class="ui">
-    <table style="height:9vh;width:98vw;border-spacing:0px;">
-        <tr>
-            <th class="logo"><a href><img src="logo.jpg" style="height: 90px; width: 105px; border-radius: 10px;"></a></th>
-            <th class="basket"><button class="basket" onclick="openCart()"><img src="cart.avif" style="height: 90px; width: 105px; border-radius: 10px;"></button></th>
-        </tr>
-    </table>
+        <div class="logo"><a href="portfolio.html"><img src="logo.jpg" alt="Enertri Logo"></a></div>
+        <div class="basket"><button class="basket" onclick="openCart()"><img src="cart.avif" alt="Shopping Cart"></button></div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-        <center><button onclick="location = 'portfolio.html'">home</button>
-      <button onclick="location = 'abouten.html'">products</button>
-      <button onclick="location = 'contact.html'">contact</button></center>
-     <div id="about">
-        <table class="produkti">
-            <tr>
-                <th><button onclick="location.href='enerpateka.html'" class="pateka" style="overflow: hidden;"><img src="pavegen-smart-street-5.webp" class="pateka"></button></th>
-                <th><button onclick="location.href='solarnipaneli.html'" class="sunflower" style="overflow: hidden;"><img src="png (1).png" class="sunflower"></button></th>
-            </tr>
-            <tr>
-                <th><button onclick="location.href='enerdurvo.html'" class="tree" style="overflow: hidden;"><img src="png.png" class="tree"></button></th>
-            </tr>
-        </table>
-      </div>
-       <div class="basketbar">
-        <button class= "close" onclick="Close()">x</button>
-            <ul id="cart"></ul>
+    
+    <nav>
+        <button onclick="location = 'portfolio.html'">home</button>
+        <button onclick="location = 'abouten.html'">products</button>
+        <button onclick="location = 'contact.html'">contact</button>
+    </nav>
+
+    <div class="container" id="about">
+        <h1>Products</h1>
+        <div class="produkti">
+            <div class="product-card">
+                <button onclick="location.href='enerpateka.html'">
+                    <img src="pavegen-smart-street-5.webp" class="pateka" alt="Ener Path">
+                </button>
+                <h3>Енер Пътека</h3>
+                <p class="price">50€ / 97.79 BGN</p>
+            </div>
+            <div class="product-card">
+                <button onclick="location.href='solarnipaneli.html'">
+                    <img src="png (1).png" class="sunflower" alt="Solar Sunflower">
+                </button>
+                <h3>Соларен Слънчоглед</h3>
+                <p class="price">400€ / 782.33 BGN</p>
+            </div>
+            <div class="product-card">
+                <button onclick="location.href='enerdurvo.html'">
+                    <img src="png.png" class="tree" alt="Energy Tree">
+                </button>
+                <h3>Енер Дърво</h3>
+                <p class="price">1790€ / 3500.94 BGN</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="basketbar">
+        <button class="close" onclick="Close()">x</button>
+        <ul id="cart"></ul>
         <p>Total: $<span id="total">0</span></p>
-        <a href="http://localhost/orders.php" class="order" style="text-decoration: none;">
-    <button>order</button>
-</a></div>
-      <script src="enerscript.js">
-      </script>
+        <a href="order.html" class="order">
+            <button>order</button>
+        </a>
+    </div>
+
+    <script src="enerscript.js"></script>
 </body>
 </html>
