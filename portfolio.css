@@ -305,10 +305,14 @@ h1 {
     z-index: 1001;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     padding: 20px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .basketbar.open {
     width: 350px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .close {
@@ -437,6 +441,7 @@ h1 {
         height: auto;
         padding: 15px;
         gap: 15px;
+        position: relative;
     }
 
     .logo img, .basket img {
@@ -445,12 +450,15 @@ h1 {
     }
 
     nav {
-        margin-top: 20px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     nav button {
         padding: 10px 20px;
         font-size: 0.9rem;
+        width: auto;
+        min-width: 100px;
     }
 
     .about-section {
@@ -513,9 +521,14 @@ h1 {
         width: 50px;
     }
 
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     nav button {
-        padding: 8px 15px;
-        font-size: 0.8rem;
+        padding: 10px 20px;
+        font-size: 0.9rem;
         width: 100%;
     }
 

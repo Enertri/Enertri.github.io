@@ -1,12 +1,12 @@
 
 let sidebar = document.getElementsByClassName("basketbar")[0];
     function openCart(){
-        sidebar.style.width = "400px";
+        sidebar.classList.add("open");
         // saveCart();
         renderCart();
     }
     function Close() {
-        sidebar.style.width = "0px";
+        sidebar.classList.remove("open");
     }
             
 
