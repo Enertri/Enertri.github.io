@@ -137,7 +137,22 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.forUs {
+    background: linear-gradient(135deg, rgb(197, 250, 197), rgb(123, 168, 123));
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 .concept p {
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1.8;
+    color: rgb(50, 70, 50);
+}
+
+.forUs p {
     font-size: 1.1rem;
     text-align: left;
     line-height: 1.8;
