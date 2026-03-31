@@ -1,90 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="portfolio.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="portfolio.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy Tree - Enertri</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="ui">
-        <div class="logo"><a href="index.html"><img src="logo.png" alt="Enertri Logo"></a></div>
-        <div class="basket"><button class="basket" onclick="openCart()"><img src="cart.avif" alt="Shopping Cart"></button></div>
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Enertri Logo" /></a>
+      </div>
+      <div class="basket">
+        <button class="basket" onclick="openCart()">
+          <img src="cart.avif" alt="Shopping Cart" />
+        </button>
+      </div>
     </div>
-    
+
     <nav>
-        <button onclick="location = 'index.html'">home</button>
-        <button onclick="location = 'abouten.html'">products</button>
-        <button onclick="location = 'contact.html'">contact</button>
-        <button onclick="location = 'structure.html'">structure</button>
+      <button onclick="location = 'index.html'">home</button>
+      <button onclick="location = 'abouten.html'">products</button>
+      <button onclick="location = 'contact.html'">contact</button>
+      <button onclick="location = 'structure.html'">about us</button>
     </nav>
 
     <div class="container">
-        <div class="product-detail">
-            <div class="product-image">
-                <img src="png.png" class="tree" alt="Energy Tree">
-            </div>
-            <div class="product-info">
-                <h2>Ветро Дърво</h2>
-                <p class="price">1790€ / 3500.94 BGN</p>
-                <div class="count">
-                    <button id="minus" class="minus">-</button>
-                    <span id="number">0</span>
-                    <button id="plus" class="plus">+</button>
-                    <button onclick="addToCart('Енер Дърво', 1790)" class="add">+ add to basket</button>
-                </div>
-            </div>
+      <div class="product-detail">
+        <div class="product-image">
+          <img src="png.png" class="tree" alt="Energy Tree" />
         </div>
+        <div class="product-info">
+          <h2>Ветро Дърво</h2>
+          <p class="price">1790€ / 3500.94 BGN</p>
+          <div class="count">
+            <button id="minus" class="minus">-</button>
+            <span id="number">0</span>
+            <button id="plus" class="plus">+</button>
+            <button onclick="addToCart('Енер Дърво', 1790)" class="add">
+              + add to basket
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <center><header style="font-size: 24px; font-weight: bold; ">Описание/Description</header></center>
+    <center>
+      <header style="font-size: 24px; font-weight: bold">
+        Описание/Description
+      </header>
+    </center>
 
-            <center><div><table>
-                <tr><td><p class="info1" style="font-size: 20px;">• Възможна е отстъпка при поръчка
-                на повече от един артикул. <br>
-                • Цената на доставката варира в
-                зависимост от локацията на
-                клиента.<br>
-                • Посочената цена включва
-                професионален монтаж. <br>
-                • Всички цени са без ДДС.<br>
-                • Размери на продукта: 2 м диаметър
-                 на короната и 8 м цялостна
-                височина</p></td>
-                <td><p class="info1" style="font-size: 20px;">• Discount is possible when ordering
-                more than one item.<br> • Delivery price varies depending on
-                the customer’s location.<br> • Stated price includes professional
-                installation.<br> • All prices are excluding VAT. <br>• Product dimensions: 2 m crown
-                diameter and 8 m total height.</p></td></tr>
-                </table></div></center>
+    <center>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <p class="info1" style="font-size: 20px">
+                • Възможна е отстъпка при поръчка на повече от един артикул.
+                <br />
+                • Цената на доставката варира в зависимост от локацията на
+                клиента.<br />
+                • Посочената цена включва професионален монтаж. <br />
+                • Всички цени са без ДДС.<br />
+                • Размери на продукта: 2 м диаметър на короната и 8 м цялостна
+                височина
+              </p>
+            </td>
+            <td>
+              <p class="info1" style="font-size: 20px">
+                • Discount is possible when ordering more than one item.<br />
+                • Delivery price varies depending on the customer’s location.<br />
+                • Stated price includes professional installation.<br />
+                • All prices are excluding VAT. <br />• Product dimensions: 2 m
+                crown diameter and 8 m total height.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
     <div class="basketbar">
-        <button class="close" onclick="Close()">x</button>
-        <ul id="cart"></ul>
-        <p>Total: $<span id="total"></span></p>
-        <a href="order.html" class="order">
-            <button>order</button>
-        </a>
+      <button class="close" onclick="Close()">x</button>
+      <ul id="cart"></ul>
+      <p>Total: $<span id="total"></span></p>
+      <a href="order.html" class="order">
+        <button>order</button>
+      </a>
     </div>
 
     <script src="enerscript.js"></script>
     <script>
-        let count = 0;
+      let count = 0;
 
-        const number = document.getElementById("number");
-        const plus = document.getElementById("plus");
-        const minus = document.getElementById("minus");
+      const number = document.getElementById("number");
+      const plus = document.getElementById("plus");
+      const minus = document.getElementById("minus");
 
-        plus.addEventListener("click", () => {
-            count++;
-            number.textContent = count;
-        });
+      plus.addEventListener("click", () => {
+        count++;
+        number.textContent = count;
+      });
 
-        minus.addEventListener("click", () => {
-            if (count > 0) {
-                count--;
-                number.textContent = count;
-            }
-        });
+      minus.addEventListener("click", () => {
+        if (count > 0) {
+          count--;
+          number.textContent = count;
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

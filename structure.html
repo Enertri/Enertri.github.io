@@ -1,123 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="portfolio.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structure - Enertri</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="portfolio.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Enertri</title>
+  </head>
+  <body>
     <div class="ui">
-        <div class="logo"><a href="index.html"><img src="logo.png" alt="Enertri Logo"></a></div>
-        <div class="basket"><button class="basket" onclick="addToCart()" style="display: none"></button><button class="basket" onclick="openCart()"><img src="cart.avif" alt="Shopping Cart"></button></div>
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Enertri Logo" /></a>
+      </div>
+      <div class="basket">
+        <button
+          class="basket"
+          onclick="addToCart()"
+          style="display: none"
+        ></button
+        ><button class="basket" onclick="openCart()">
+          <img src="cart.avif" alt="Shopping Cart" />
+        </button>
+      </div>
     </div>
-    
+
     <nav>
-        <button onclick="location = 'index.html'">home</button>
-        <button onclick="location = 'abouten.html'">products</button>
-        <button onclick="location = 'contact.html'">contact</button>
-        <button onclick="location = 'structure.html'">About us</button>
+      <button onclick="location = 'index.html'">home</button>
+      <button onclick="location = 'abouten.html'">products</button>
+      <button onclick="location = 'contact.html'">contact</button>
+      <button onclick="location = 'structure.html'">About us</button>
     </nav>
 
     <div class="container" id="structure">
-        <h1>Enertri Team Organization (14 People)<br>Енертри – Организационна структура (14 човека)</h1>
-        
-        <div class="org-section">
-            <h2>1. Leadership – Ръководство (3)</h2>
-            
-            <div class="team-member">
-                <h3>CEO – Управител / Главен изпълнителен директор – Деница Тодорова</h3>
-                <p>Vision, partnerships, fundraising, strategy - Визия, партньорства, набиране на финансиране, стратегия</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>COO (Chief Operating Officer) – Главен оперативен директор – Дзиаин Ванг</h3>
-                <p>Overseas operations, delivery, supply chain – Управление на операциите, изпълнение на проекти, верига на доставки</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>CTO (Chief Technology Officer) – Главен технологичен директор – Данаил Методиев</h3>
-                <p>Leads product development (Wind Tree, Solar Sunflower, Energy Path) – Ръководи разработката на продуктите</p>
-            </div>
+      <h1>
+        Enertri Team Organization (14 People)<br />Енертри – Организационна
+        структура (14 човека)
+      </h1>
+
+      <div class="org-section">
+        <h2>1. Leadership – Ръководство (3)</h2>
+
+        <div class="team-member">
+          <h3>
+            CEO – Управител / Главен изпълнителен директор – Деница Тодорова
+          </h3>
+          <p>
+            Vision, partnerships, fundraising, strategy - Визия, партньорства,
+            набиране на финансиране, стратегия
+          </p>
         </div>
 
-        <div class="org-section">
-            <h2>2. Product & Engineering – Продукт и инженеринг (4)</h2>
-            
-            <div class="team-member">
-                <h3>Product Manager – Продуктов мениджър – Емирджан Мусов</h3>
-                <p>Coordinates product roadmap across all 3 solutions – Координира планът за разработване на трите основни продукта</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Mechanical Engineer – Машинен инженер – Гари Бодикян</h3>
-                <p>Design & optimization of physical systems – Проектиране и оптимизация на физическите системи</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Energy Systems Engineer – Инженер енергийни системи – Алекси Тодоров</h3>
-                <p>Energy generation, integration, performance – Производство на енергия, интеграция, ефективност</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>R&D & Innovation Engineer - Инженер по научноизследователска и развойна дейност – Александър Атанасов</h3>
-                <p>New concepts, efficiency improvements, prototyping - Нови концепции, подобрения на ефективността, прототипи</p>
-            </div>
+        <div class="team-member">
+          <h3>
+            COO (Chief Operating Officer) – Главен оперативен директор – Дзиаин
+            Ванг
+          </h3>
+          <p>
+            Overseas operations, delivery, supply chain – Управление на
+            операциите, изпълнение на проекти, верига на доставки
+          </p>
         </div>
 
-        <div class="org-section">
-            <h2>3. Sales and Marketing (4)</h2>
-            
-            <div class="team-member">
-                <h3>Head of Sales & Business Development – Ръководител продажби и бизнес развитие – Калин Ангелов</h3>
-                <p>Strategy, key accounts, partnerships - Стратегия, ключови клиенти, партньорства</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Sales Manager - Мениджър продажби – Даниел Стойчев</h3>
-                <p>Client acquisition (municipalities, developers, corporates) - Привличане на клиенти (общини, инвеститори, корпоративни клиенти)</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Customer Success Expert - Експерт „Грижа за клиента" – Александър Димов</h3>
-                <p>Client relations and feedback, coordination with operations and engineering, new sales opportunities with existing clients – получава обратна връзка от клиентите, координация с оперативния мениджър и инженеринга, идентифицира възможности за допълнителни продажби</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Marketing & Communications Expert – Експерт „Маркетинг и комуникации" – Даниела Димитрова</h3>
-                <p>Marketing campaigns, website and social media content, PR – Организиране на маркетинг кампании, съсздаване на съдържание за сайта и социалните мрежи, връзки с обществеността</p>
-            </div>
+        <div class="team-member">
+          <h3>
+            CTO (Chief Technology Officer) – Главен технологичен директор –
+            Данаил Методиев
+          </h3>
+          <p>
+            Leads product development (Wind Tree, Solar Sunflower, Energy Path)
+            – Ръководи разработката на продуктите
+          </p>
+        </div>
+      </div>
+
+      <div class="org-section">
+        <h2>2. Product & Engineering – Продукт и инженеринг (4)</h2>
+
+        <div class="team-member">
+          <h3>Product Manager – Продуктов мениджър – Емирджан Мусов</h3>
+          <p>
+            Coordinates product roadmap across all 3 solutions – Координира
+            планът за разработване на трите основни продукта
+          </p>
         </div>
 
-        <div class="org-section">
-            <h2>4. Operations & Delivery – Операции и изпълнение (3)</h2>
-            
-            <div class="team-member">
-                <h3>Business Operations Expert – Експерт „Бизнес операции" – Иван Петров</h3>
-                <p>Organizing all product installations and on time delivery to the end-clients – Организира доставката на всички продукти, така че да пристигнат навреме при клиентите и да бъдат коректно инсталирани</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Procurement & Logistics Expert – Експерт „Снабдяване и логистика" – Йоан Илиев</h3>
-                <p>Procurement and supplier sourcing; supply chain and logistics management - Снабдяване и избор на доставчици; Управление на веригата на доставки и логистика</p>
-            </div>
-            
-            <div class="team-member">
-                <h3>Finance & Administration Manager – Мениджър финанси и администрация – Аника Ангелова</h3>
-                <p>Budgeting, accounting, HR, contracts – Бюджетиране, счетоводство, човешки ресурси и договори</p>
-            </div>
+        <div class="team-member">
+          <h3>Mechanical Engineer – Машинен инженер – Гари Бодикян</h3>
+          <p>
+            Design & optimization of physical systems – Проектиране и
+            оптимизация на физическите системи
+          </p>
         </div>
+
+        <div class="team-member">
+          <h3>
+            Energy Systems Engineer – Инженер енергийни системи – Алекси Тодоров
+          </h3>
+          <p>
+            Energy generation, integration, performance – Производство на
+            енергия, интеграция, ефективност
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>
+            R&D & Innovation Engineer - Инженер по научноизследователска и
+            развойна дейност – Александър Атанасов
+          </h3>
+          <p>
+            New concepts, efficiency improvements, prototyping - Нови концепции,
+            подобрения на ефективността, прототипи
+          </p>
+        </div>
+      </div>
+
+      <div class="org-section">
+        <h2>3. Sales and Marketing (4)</h2>
+
+        <div class="team-member">
+          <h3>
+            Head of Sales & Business Development – Ръководител продажби и бизнес
+            развитие – Калин Ангелов
+          </h3>
+          <p>
+            Strategy, key accounts, partnerships - Стратегия, ключови клиенти,
+            партньорства
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>Sales Manager - Мениджър продажби – Даниел Стойчев</h3>
+          <p>
+            Client acquisition (municipalities, developers, corporates) -
+            Привличане на клиенти (общини, инвеститори, корпоративни клиенти)
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>
+            Customer Success Expert - Експерт „Грижа за клиента" – Александър
+            Димов
+          </h3>
+          <p>
+            Client relations and feedback, coordination with operations and
+            engineering, new sales opportunities with existing clients –
+            получава обратна връзка от клиентите, координация с оперативния
+            мениджър и инженеринга, идентифицира възможности за допълнителни
+            продажби
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>
+            Marketing & Communications Expert – Експерт „Маркетинг и
+            комуникации" – Даниела Димитрова
+          </h3>
+          <p>
+            Marketing campaigns, website and social media content, PR –
+            Организиране на маркетинг кампании, съсздаване на съдържание за
+            сайта и социалните мрежи, връзки с обществеността
+          </p>
+        </div>
+      </div>
+
+      <div class="org-section">
+        <h2>4. Operations & Delivery – Операции и изпълнение (3)</h2>
+
+        <div class="team-member">
+          <h3>
+            Business Operations Expert – Експерт „Бизнес операции" – Иван Петров
+          </h3>
+          <p>
+            Organizing all product installations and on time delivery to the
+            end-clients – Организира доставката на всички продукти, така че да
+            пристигнат навреме при клиентите и да бъдат коректно инсталирани
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>
+            Procurement & Logistics Expert – Експерт „Снабдяване и логистика" –
+            Йоан Илиев
+          </h3>
+          <p>
+            Procurement and supplier sourcing; supply chain and logistics
+            management - Снабдяване и избор на доставчици; Управление на
+            веригата на доставки и логистика
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>
+            Finance & Administration Manager – Мениджър финанси и администрация
+            – Аника Ангелова
+          </h3>
+          <p>
+            Budgeting, accounting, HR, contracts – Бюджетиране, счетоводство,
+            човешки ресурси и договори
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="basketbar">
-        <button class="close" onclick="Close()">x</button>
-        <ul id="cart"></ul>
-        <p>Total: $<span id="total"></span></p>
-        <a href="order.html" class="order">
-            <button>order</button>
-        </a>
+      <button class="close" onclick="Close()">x</button>
+      <ul id="cart"></ul>
+      <p>Total: $<span id="total"></span></p>
+      <a href="order.html" class="order">
+        <button>order</button>
+      </a>
     </div>
 
     <script src="enerscript.js"></script>
-</body>
+  </body>
 </html>

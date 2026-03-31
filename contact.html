@@ -1,51 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="portfolio.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="portfolio.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Enertri</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="ui">
-        <div class="logo"><a href="index.html"><img src="logo.png" alt="Enertri Logo"></a></div>
-        <div class="basket"><button class="basket" onclick="openCart()"><img src="cart.avif" alt="Shopping Cart"></button></div>
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Enertri Logo" /></a>
+      </div>
+      <div class="basket">
+        <button class="basket" onclick="openCart()">
+          <img src="cart.avif" alt="Shopping Cart" />
+        </button>
+      </div>
     </div>
-    
+
     <nav>
-        <button onclick="location = 'index.html'">home</button>
-        <button onclick="location = 'abouten.html'">products</button>
-        <button onclick="location = 'contact.html'">contact</button>
-        <button onclick="location = 'structure.html'">structure</button>
+      <button onclick="location = 'index.html'">home</button>
+      <button onclick="location = 'abouten.html'">products</button>
+      <button onclick="location = 'contact.html'">contact</button>
+      <button onclick="location = 'structure.html'">about us</button>
     </nav>
 
     <div class="container" id="contact">
-        <h1>Contact Us</h1>
-        <div class="contact-section">
-            <div class="contact-item">
-                <img src="mail-removebg-preview.png" alt="Email">
-                <p>enertriup@gmail.com</p>
-            </div>
-            <div class="contact-item">
-                <img src="phone-removebg-preview.png" alt="Phone">
-                <p>088 503 0940</p>
-            </div>
-            <div class="contact-item">
-                <img src="insta-removebg-preview.png" alt="Instagram">
-                <p>@enertrup</p>
-            </div>
+      <h1>Contact Us</h1>
+      <div class="contact-section">
+        <div class="contact-item">
+          <img src="mail-removebg-preview.png" alt="Email" />
+          <p>enertriup@gmail.com</p>
         </div>
+        <div class="contact-item">
+          <img src="phone-removebg-preview.png" alt="Phone" />
+          <p>088 503 0940</p>
+        </div>
+        <div class="contact-item">
+          <img src="insta-removebg-preview.png" alt="Instagram" />
+          <p>@enertrup</p>
+        </div>
+      </div>
     </div>
 
     <div class="basketbar">
-        <button class="close" onclick="Close()">x</button>
-        <ul id="cart"></ul>
-        <p>Total: $<span id="total">0</span></p>
-        <a href="order.html" class="order">
-            <button>order</button>
-        </a>
+      <button class="close" onclick="Close()">x</button>
+      <ul id="cart"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <a href="order.html" class="order">
+        <button>order</button>
+      </a>
     </div>
 
     <script src="enerscript.js"></script>
-</body>
+  </body>
 </html>
