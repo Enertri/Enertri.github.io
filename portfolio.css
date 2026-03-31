@@ -190,6 +190,14 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+.sunvideo, .pathvideo {
+    position: absolute;
+    left: 190px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 1150px;
+}
+
 .product-card {
     background: white;
     border-radius: 15px;
@@ -448,6 +456,24 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.structureh2 {
+    text-align: center;
+}
+
+.Leadership {
+    padding-left: 100px;
+    background-color: rgb(139, 215, 141);
+    display: inline-block;
+}
+
+.Ssinfo {
+padding-left: 60px;
+}
+
+.sinfo {
+    padding-left: 30px;
 }
 
 @media (max-width: 768px) {
