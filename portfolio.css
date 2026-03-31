@@ -191,11 +191,12 @@ h1 {
 }
 
 .sunvideo, .pathvideo {
-    position: absolute;
-    left: 190px;
+    display: block;
+    margin: 40px auto;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    width: 1150px;
+    width: 90%;
+    max-width: 1150px;
 }
 
 .product-card {
